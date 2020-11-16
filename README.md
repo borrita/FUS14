@@ -19,3 +19,5 @@
 - git status
 - git add
 - git commit -m "메세지"
+- git commit -am "메세지" (파일이 많이 없을 경우)
+- git push -u origin main (remote 저장소에 저장)
