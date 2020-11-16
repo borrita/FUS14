@@ -11,3 +11,11 @@
 - rmdir
 - rm
 - mv
+## Git
+- 초기환경 설정
+  - git config --global user.name
+  - git config --global user.email
+- git init (원하는 폴더 들어가서)
+- git status
+- git add
+- git commit -m ""  
