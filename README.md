@@ -1,5 +1,5 @@
 # FUS 14기 Git 수업
-## 성수캠퍼스
+## 성수캠퍼스 (주보라)
 11월 16일 부터 20일까지 패스트캠퍼스 성수교육장에서 Git 관련 수업 내용을 정리해봤습니다.
 ## CLI
 - pwd
@@ -18,4 +18,4 @@
 - git init (원하는 폴더 들어가서)
 - git status
 - git add
-- git commit -m ""  
+- git commit -m "메세지"
