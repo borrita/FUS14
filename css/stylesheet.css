@@ -55,8 +55,42 @@
     height: 1px;
     margin: -1px;
   }
+  .response{
+    max-width: 100%;
+    height: auto;
+   }
   /* 헤더 디자인 */
+
   .app-header
   {
-    background-color: yellow;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #f5f4fb 1px solid;
+  }
+  .is-open-menu{
+    padding:33px 28px;
+    background-color: #fff;
+  }
+  /* 브랜드로고 */
+  .brand{
+    margin: 0;
+    line-height: 16px;
+    padding: 2px;
+  }
+  .brand a{
+    display: block;
+    padding: 30px;
+  }
+  /*메인메뉴버튼*/
+
+  .is-open-menu .ir{
+    display: inline-block;
+    width: 26px;
+    height: 22px;
+    background-image: url(./../images/navigation-button.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
