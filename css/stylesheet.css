@@ -69,7 +69,10 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: #f5f4fb 1px solid;
-  }
+    position:sticky;
+    top: 0;
+    z-index: 500;
+    }
   .is-open-menu{
     padding:33px 28px;
     background-color: #fff;
@@ -103,6 +106,7 @@
     align-content: flex-start;
     justify-content: flex-end;
     background: hsla(225, 57%, 10%, 0.9);
+    z-index: 1000;
     color: #fff;
     position: fixed;
     padding: 10px;
@@ -164,6 +168,9 @@
 .ediya-menu__item{
   width: 100%;
   background-color: #f5f5f5;
+  position: relative;
+  min-width: 280px;
+  
 }
 .ediya-menu__item:nth-child(n+2){
   margin-top: 20px;
@@ -188,16 +195,79 @@
 .ediya-menu a[role="button"]:focus img{
   transform: scale(1);
 }
+/* 음료상세정보 */
+.ediya-menu__item--detail{
+  background-color: rgba(204,204,204,0.5);
+  padding: 30px 20px;
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #202023;
+}
+.ediya-menu__item--name{
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom:#202023 1px solid;
+  margin: 0;
+}
+.ediya-menu__item--name span[lang="en"]{
+  display: block;
+  color: #999;
+  font-size: 1.4rem;
+}
+.ediya-menu__item--multi-column dl{
+
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ediya-menu__item--multi-column{
+  background-color: #f8f8f8;
+  column-count: 2;
+  column-rule: 1px solid #000;
+  padding: 20px 2px 10px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+.ediya-menu__item--multi-column dt, .ediya-menu__item--multi-column dd{
+  width: 50%;
+  margin: 0;
+  font-size: 1.3rem;
+}
+.ediya-menu__item--multi-column dt{
+  width: 50%;
+ 
+}
+.ediya-menu__item--multi-column dd{
+
+
+}
+.ediya-menu__item--detail .is-close-panel{
+position: absolute;
+right: 10px;
+top: 10px;
+background-color: transparent;
+padding: 10px;
+}
+
 @media all and (min-width: 768px)
 {
   .app-main {
 
   }
   .ediya-menu{
-      width: 526px;
+      width: 89.84375%;
+      max-width: 1720px;
   }
   .ediya-menu__item{
-    width: 248px;
+    width: 47.826087%;
   }
   .ediya-menu__item:nth-child(2){
   margin-top: 0;
